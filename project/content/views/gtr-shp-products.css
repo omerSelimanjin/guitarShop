@@ -1,0 +1,232 @@
+body {
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header-block{
+    float: left;
+    padding-left: 15px;
+    display: inline-block;
+}
+.image{
+    padding-top: 10px;
+}
+.header-text{
+    padding-left: 20px;
+    float: right;
+}
+.header-name{
+    padding-top: 7px;
+    font-size: 1.5rem;  
+    color: #afa5a5;  
+}
+.header-gtr-shp{
+    font-size: 1rem;
+    color: #827c7c;
+}
+.ccsticky-nav {
+    z-index: 1;
+    width: 100%;
+    height: 10%;
+    min-height: 60px; 
+    position: fixed; 
+    top: 0;
+    background: rgb(41, 39, 45);
+    border-bottom: 1px solid black;
+    opacity: 0.8;
+}
+.ccsticky-nav ul {
+    float: right;
+    padding: 20px;
+    margin: 0 auto;
+    list-style: none;
+    text-align: center;
+    clear: right;
+}
+.ccsticky-nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+.ccsticky-nav ul li a {
+    padding: 10px 0;
+    color: #635a5a;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+.ccsticky-nav ul li a:hover {
+    color: #34495E;
+}
+section {
+    min-height: 75%;
+    height: fit-content;
+    z-index: 0;
+    padding: 50px;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+    color: #a71b1b;
+}
+footer {
+    position: relative;
+    min-height: 60px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: #e62424;
+    border-top: 1px solid #922c2c;
+}
+
+.slider{
+	width: 640px; 
+	position: relative;
+	padding-top: 320px; 	
+	margin: 100px auto;
+	
+	/*Lets add a shadow*/
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+
+/*Last thing remaining is to add transitions*/
+.slider>img{
+	position: absolute;
+	left: 0; top: 0;
+	transition: all 0.5s;
+}
+
+.slider input[name='slide_switch'] {
+	display: none;
+}
+
+.slider label {
+	/*Lets add some spacing for the thumbnails*/
+	margin: 18px 0 0 18px;
+	border: 3px solid #999;
+	
+	float: left;
+	cursor: pointer;
+	transition: all 0.5s;
+	
+	/*Default style = low opacity*/
+	opacity: 0.6;
+}
+
+.slider label img{
+	display: block;
+}
+
+/*Time to add the click effects*/
+.slider input[name='slide_switch']:checked+label {
+	border-color: #666;
+	opacity: 1;
+}
+/*Clicking any thumbnail now should change its opacity(style)*/
+/*Time to work on the main images*/
+.slider input[name='slide_switch'] ~ img {
+	opacity: 0;
+	transform: scale(1.1);
+}
+/*That hides all main images at a 110% size
+On click the images will be displayed at normal size to complete the effect
+*/
+.slider input[name='slide_switch']:checked+label+img {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.basic-info{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 12px;
+    display: inline-block;
+    float: left;
+    color: #e4b0b0;
+    font-weight: 10;
+}
+.follow-us{
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 12px;
+    display: inline-block;
+    float: right;
+    color: #e4b0b0;
+    font-weight: 10; 
+}
+
+a:-webkit-any-link {
+    color: #e4b0b0;
+    text-decoration: none;
+    cursor: auto;
+}
+
+.main-text{
+    margin-top: 20px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.cat-text{
+    margin-top: 20px;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(41, 39, 45);
+    padding-top: 20px;
+    opacity: 0.8;
+    min-width: 160px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    transition: all 0.2s ease;
+    color: #34495E;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+}
+
+.dropbtn{
+    background: transparent;
+    border: transparent;
+    color: #635a5a;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 637px) {
+    .topnav{ height: auto; }
+    .menu-list{ float: left; }
+    .main-text{ margin-top: 70px;}
+}
+
+@media screen and (min-width: 638px) {
+    .menu-list{ float: right; }
+}
