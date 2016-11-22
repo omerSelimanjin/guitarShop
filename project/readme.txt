@@ -26,3 +26,8 @@ Uradjene su sljedece stvari:
 --- gtr-shp-products.html - products page
 --- gtr-shp-products.css - css file za gtr-shp-products.html
 Napomena: naknadno ce css, html i js file-ovi biti odvojeni u razlicite foldere (npr scripts, styles, views)
+
+Spirala 2:
+Uradjeni ajax pozivi
+Uradjen fullscreen na klik slike u Products->Guitars
+Uradjena validacija inputa na Contact (uskoro ce biti ubaceno jos par input formi koje ce se takodjer validirati)
