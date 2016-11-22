@@ -25,9 +25,9 @@
             <li><a href="gtr-shp-home.html">Home</a></li>
             <li>
                 <div class="dropdown">
-                    <button class="dropbtn"><a href="#" style="color: rgb(125, 120, 134);">Products</a></button>
+                    <button class="dropbtn"><a href="gtr-shp-products.html" style="color: rgb(125, 120, 134);">Products</a></button>
                     <div class="dropdown-content">
-                        <a href="gtr-shp-product.html">Guitars</a>
+                        <a href="#" style="color: rgb(125, 120, 134);">Guitars</a>
                         <a href="#">Category 2</a>
                         <a href="#">Category 3</a>
                     </div>
@@ -38,8 +38,34 @@
         </ul>
     </nav>
 
-    <section>
-        <h2>TBD</h2>
+    <section>   
+        <div class='product-image'>
+            <h2 id='text-header'></h2>
+            <div class="modal" id='img-modal'>
+                <input id="modal" type="checkbox" name="modal" tabindex="1">
+                <label for="modal" style="background-color: transparent;">
+                    <img id='product-image-modal' style="width:100%" onclick='showVisible()'/>
+                </label>
+                <div class="modal__overlay" id='fsmodal'>
+                    <div class="modal__box">
+                    <label for="modal">&#10006;</label>
+                        <img id='product-image-full' style="width:100%"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id='product-text'>
+        </div>
+
+        <div id='see-also-block'>
+            <h2>See also</h2>
+            <div id='img-block'>
+                <img class='img-also' id='img1' src='esp-willie.jpg' onclick="img1Click()"/>
+                <img class='img-also' id='img2' src='esp-kh2.jpg' onclick='img2Click()'/>
+                <img class='img-also' id='img3' src='esp-custom.jpg' onclick='img3Click()'/>
+                <img class='img-also' id='img4' src='esp-jh.jpg' onclick='img4Click()'/>
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -56,4 +82,5 @@
             <a href="http://www.instagram.com"><i class="icon-social-instagram icons" style="font-size: 20px;"></i></a>
         </div>
     </footer>
+</div>
 </body>

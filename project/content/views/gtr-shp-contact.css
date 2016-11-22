@@ -339,3 +339,12 @@ a:-webkit-any-link {
     .menu-list{ float: right; }
     .centering {text-align: center; }
 }
+
+.round-button {
+    cursor: pointer;
+}
+
+#errorLabel{
+    text-align: center;
+    margin-left: -10%;
+}
